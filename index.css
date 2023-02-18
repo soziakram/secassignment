@@ -1,0 +1,45 @@
+.section {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(auto);
+}
+.info {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 1rem;
+  background-image: linear-gradient(
+    var(--card-gradient),
+    white max(9.5rem, 27vh)
+  );
+  overflow: hidden;
+  margin: 20px;
+}
+
+.info h3,
+span {
+  padding: 1rem;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.id {
+  background-color: rgba(227, 116, 227, 0.611);
+
+  border-top-right-radius: 1rem;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    display: block;
+    background-color: rgba(227, 116, 227, 0.611);
+  }
+  .info {
+    display: block;
+  }
+  span {
+    font-size: 1rem;
+  }
+}
